@@ -1,0 +1,35 @@
+#v65-modalContentHeader{
+	background: $headingFontColor;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: $maxWidth;
+
+	@media screen and (min-width: 581px) and (max-width: 1030px){
+		padding: 0 10px;
+	}
+}
+
+.content{
+	background: $homepageContentColor;
+}
+
+	.pageContent{
+		@media screen and (max-width: 767px){
+			padding: 1em;
+		}
+		
+		@media screen and (min-width: 768px){
+			padding: 3em;
+		}
+	}
+
+/* ----- a. Homepage Styles ----- */
+@import 'content_home';
+
+/* ----- b. Page Styles ----- */
+@import 'content_page';
+
+/* ----- c. Store Styles ----- */
+@import 'content_store';

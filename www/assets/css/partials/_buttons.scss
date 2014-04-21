@@ -1,0 +1,417 @@
+button {
+	span{
+		padding: 0 1em;
+	}
+
+	&.defaultBtn,  &.modalBtn,  &.largeBtn{
+		@include mainButtonColor;
+		border: 1px solid $boxShadowHover;
+		border-radius: 3px;
+		box-shadow: inset 0 1px 0 0 lighten($boxShadowColor, 10%);
+		text-decoration: none;
+		text-shadow: 0 -1px 0 lighten($boxShadowHover, 10%);
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			@include mainButtonHover;
+			box-shadow: inset 0 1px 0 0 lighten($boxShadowHover, 10%);
+		}
+	}
+
+	&.modalBtn, &.altModalBtn{
+		height: 2.5em;
+		line-height: inherit;
+	}
+
+	&.altBtn, &.altModalBtn, &.altLargeBtn{
+		@include altButtonColor;
+		border: 1px solid $altBoxShadowColor;
+		border-radius: 3px;
+		box-shadow: inset 0 1px 0 0 $altBoxShadowColor;
+		text-decoration: none;
+		text-shadow: 0 -1px 0 $altButtonText;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			@include altButtonHover;
+			box-shadow: inset 0 1px 0 0 $altBoxShadowColor;
+		}
+	}
+}
+
+a{
+	span{
+		padding: 0 1em;
+		height: auto;
+		line-height: inherit;
+	}
+	
+	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn{
+		@include mainButtonColor;
+		border: 1px solid $boxShadowHover;
+		border-radius: 3px;
+		box-shadow: inset 0 1px 0 0 lighten($boxShadowColor, 10%);
+		text-decoration: none;
+		text-shadow: 0 -1px 0 lighten($boxShadowHover, 10%);
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			@include mainButtonHover;
+			box-shadow: inset 0 1px 0 0 lighten($boxShadowHover, 20%);
+		}
+	}
+
+	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		@include altButtonColor;
+		border: 1px solid $altBoxShadowColor;
+		border-radius: 3px;
+		box-shadow: inset 0 1px 0 0 $altBoxShadowColor;
+		text-decoration: none;
+		text-shadow: 0 -1px 0 $altButtonText;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			@include altButtonHover;
+			box-shadow: inset 0 1px 0 0 $altBoxShadowColor;
+		}
+	}
+
+	&.modalLinkBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		min-width: auto;
+	}
+}
+
+
+.v65-cartCheckOutButtons {
+
+	a.linkAltBtn {
+		background: $gold-light;
+		border: 1px solid $gold-dark;
+		border-radius: 0;
+		box-shadow: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		font-family: $garamond;
+		font-weight: bold;
+		font-size: 1em;
+		height: auto;
+		padding: 4px;
+		text-shadow: none;
+		text-transform: uppercase;
+
+		span {
+			background: $gold;
+			border-radius: 0;
+			padding: 0.3em 1em;
+
+			&:hover {
+				background: $gold-dark;
+			}
+		}
+	}
+
+	a.largeLinkBtn {
+		background: $gold-light;
+		border: 1px solid $gold-dark;
+		border-radius: 0;
+		box-shadow: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		font-family: $garamond;
+		font-weight: bold;
+		font-size: 1em;
+		height: auto;
+		padding: 4px;
+		text-shadow: none;
+		text-transform: uppercase;
+
+		span {
+			background: $blue;
+			border-radius: 0;
+			color: $gold-light;
+			padding: 0.3em 1em;
+
+			&:hover {
+				background: $blue-light;
+			}
+		}
+	}
+}
+
+a.modalLinkAltBtn {
+	background: $gold-light;
+	border: 1px solid $gold-dark;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: $garamond;
+	font-weight: bold;
+	font-size: 1em;
+	height: auto;
+	padding: 4px;
+	text-shadow: none;
+	text-transform: uppercase;
+
+	span {
+		background: $gold;
+		border-radius: 0;
+		padding: 0.3em 1em;
+
+		&:hover {
+			background: $gold-dark;
+		}
+	}
+
+	&:hover {
+		background: $gold-light;
+		box-shadow: none;
+	}
+}
+
+a.modalLinkBtn {
+	background: $gold-light;
+	border: 1px solid $gold-dark;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: $garamond;
+	font-weight: bold;
+	font-size: 1em;
+	height: 2.5em;
+	padding: 4px;
+	text-shadow: none;
+	text-transform: uppercase;
+
+	span {
+		background: $blue;
+		border-radius: 0;
+		color: $gold-light;
+		height: 1em;
+		line-height: 1em;
+		padding: 0.3em 1em;
+
+		&:hover {
+			background: $blue-light;
+		}
+	}
+
+	&:hover {
+		background: $gold-light;
+		box-shadow: none;
+	}
+
+
+
+	#user-tools & {
+		height: auto;
+
+		span {
+			height: auto;
+			line-height: 2em;
+		}
+	}
+}
+
+#v65-modalContentWrapper {
+	.modalLinkBtn {
+		background: none;
+		border: 0;
+		box-shadow: none;
+		font: bold 10px Arial,Helvetica,sans-serif;
+		text-transform: uppercase;
+
+		&:hover {
+			background: none;
+			box-shadow: none;
+		}
+
+		span {
+			background: none;
+			box-shadow: none;
+			color: #787d89;
+
+			&:hover {
+				background: none;
+				color: lighten(#787d89, 10%);
+				box-shadow: none;
+			}
+
+			&:after {
+				content: 'x';
+				display: inline-block;
+				padding-left: 5px;
+			}
+		}
+	}
+}
+
+button.largeBtn {
+		background: $gold-light;
+		border: 1px solid $gold-dark;
+		border-radius: 0;
+		box-shadow: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		font-family: $garamond;
+		font-weight: bold;
+		font-size: 1.2em;
+		height: 3.9em;
+		padding: 4px;
+		text-shadow: none;
+		text-transform: uppercase;
+
+		span {
+			background: $blue;
+			border-radius: 0;
+			color: $gold-light;
+			height: 2.6em;
+			line-height: 2.8em;
+			padding: 0.3em 1em;
+
+			&:hover {
+				background: $blue-light;
+			}
+		}
+
+		&:hover {
+			background: $gold-light;
+			box-shadow: none;
+		}
+	}
+
+button.modalBtn, button.defaultBtn, a.linkBtn {
+	background: $gold-light;
+	border: 1px solid $gold-dark;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: $garamond;
+	font-weight: bold;
+	font-size: 1em;
+	height: auto;
+	padding: 4px;
+	text-shadow: none;
+	text-transform: uppercase;
+
+	span {
+		background: $blue;
+		border-radius: 0;
+		color: $gold-light;
+		padding: 0.3em 0.7em;
+
+		&:hover {
+			background: $blue-light;
+		}
+	}
+
+	&:hover {
+		background: $gold-light;
+		box-shadow: none;
+
+	}
+}
+
+@media screen and (max-width: 580px) {
+	button.defaultBtn {
+		height: 4em;
+
+		span {
+			height: 2.5em;
+			line-height: 2.5em;
+		}
+	}
+}
+
+#v65-cartTable {
+	button.modalBtn, a.modalLinkAltBtn.v65-cartRemoveButton {
+		background: none;
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		font-family: $garamond;
+		font-weight: bold;
+		font-size: 1em;
+		margin: 0;
+		padding: 0;
+		text-shadow: none;
+		text-transform: uppercase;
+
+		span {
+			color: $blue;
+			background: none;
+			padding: 0.5em 0;
+		}
+	}
+}
+
+select {
+	background-image: url('../images/dropdown-arrow.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-background-clip: padding;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	background-color: white;
+	border: 1px solid #ccc;
+	color: black;
+	outline: 0;
+	margin: 0;
+	padding: 2px 3px;
+	text-align: left;
+	height: 30px;
+	vertical-align: top;
+}
+
+.v65-addNewCreditCard {
+	display: none;
+}

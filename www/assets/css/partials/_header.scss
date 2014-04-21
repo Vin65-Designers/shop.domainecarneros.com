@@ -1,0 +1,262 @@
+header.primary{
+	background: $blue image-url('header-gold-foil.jpg') bottom center repeat-x;
+	margin-bottom: 1em;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
+	#user-tools {
+		.contact {
+			display: none;
+		}
+
+		@media screen and (min-width: 581px) {
+			font: bold 10px $arial;
+			height: 2em;
+			margin: 1.5em 0 0;
+			width: 430px;
+
+			.v65-yourAccount, .v65-editProfile {
+				margin-top: 0;
+				// width: 110px;
+				width: auto;
+			}
+			
+			.v65-login, .v65-logout {
+				margin-top: 0;
+			}
+
+			.contact {
+				display: block;
+				float: left;
+				margin: -2px 1em 0 0;
+
+				.email {
+					display: inline-block;
+					vertical-align: middle;
+					margin-left: 3px;
+					width: 14px;
+					height: 10px;
+					background-image: image-url('mail.png');
+				}
+				.phone {
+					display: inline-block;
+					vertical-align: middle;
+					margin-left: 3px;
+					width: 13px;
+					height: 14px;
+					background-image: image-url('phone.png');
+				}
+			}
+
+			#v65-modalCartDropdown {
+				border: 1px solid #000;
+				color: #494949;
+				padding: 20px 40px 40px;
+				width: 400px;
+
+				#v65-modalCartBody {
+					padding: 0;
+
+					.right:first-child {
+						.modalLinkAltBtn {
+							background: none;
+							border: 0;
+							box-shadow: none;
+							font: bold 10px Arial,Helvetica,sans-serif;
+							margin: 0 0 1em;
+							padding: 0;
+							text-transform: uppercase;
+
+							&:hover {
+								background: none;
+								box-shadow: none;
+							}
+
+							span {
+								background: none;
+								box-shadow: none;
+								color: #787d89;
+								padding: 0;
+
+								&:hover {
+									background: none;
+									color: lighten(#787d89, 10%);
+									box-shadow: none;
+								}
+
+								&:after {
+									content: 'x';
+									display: inline-block;
+									padding-left: 5px;
+								}
+							}
+						}
+					}
+
+					.right {
+						margin: 0;
+					}
+				}
+
+				#v65-modalCartTable {
+				
+					th {
+						background: none;
+						border: 0;
+						font: normal 12px $arial;
+					}
+
+					td {
+						background: image-url('gold_rule_thin.png') top center repeat-x;
+						border: 0;
+						clear: both;
+						font: normal 12px $arial;
+						height: 5px;
+						padding: 15px 1px;
+
+						strong {
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}
+		
+		@media screen and (max-width: 768px) and (min-width: 581px) {
+			margin: 1.5em 0;
+		}
+
+		@media screen and (max-width: 580px){
+			border-bottom: 1px solid #787d89;
+
+			.v65-editProfile {
+				line-height: 1.5em;
+				padding: 0.8em 0 0;
+			}
+
+			#v65-modalCartDropdown {
+				border: 1px solid #000;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				color: #494949;
+				padding: 20px;
+				width: 100%;
+
+				#v65-modalCartBody {
+					padding: 0;
+
+					.right:first-child {
+						.modalLinkAltBtn {
+							background: none;
+							border: 0;
+							box-shadow: none;
+							font: bold 10px Arial,Helvetica,sans-serif;
+							height: 2em;
+							margin: 0 0 1em;
+							padding: 0;
+							text-align: right;
+							text-transform: uppercase;
+
+							&:hover {
+								background: none;
+								box-shadow: none;
+							}
+
+							span {
+								background: none;
+								box-shadow: none;
+								color: #787d89;
+								padding: 0;
+
+								&:hover {
+									background: none;
+									color: lighten(#787d89, 10%);
+									box-shadow: none;
+								}
+
+								&:after {
+									content: 'x';
+									display: inline-block;
+									padding-left: 5px;
+								}
+							}
+						}
+					}
+
+					.right {
+						margin: 0;
+					}
+
+					.modalLinkBtn span {
+						line-height: 4em;
+					}
+				}
+
+				#v65-modalCartTable {
+				
+					th {
+						background: none;
+						border: 0;
+						font: normal 12px $arial;
+					}
+
+					td {
+						background: image-url('gold-line.png') top center repeat-x;
+						border: 0;
+						clear: both;
+						font: normal 12px $arial;
+						height: 5px;
+						padding: 15px 1px;
+
+						strong {
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}
+
+		a {
+			color: $grey;
+			// font-size: 0.9em;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		
+	}
+
+	.logo{
+		background:{
+			image: image-url($logo);
+			position: top center;
+			repeat: no-repeat;
+		}
+		background-size: contain;
+		display: block;
+		height: 23px;
+		margin: 1.2em 0 0;
+		position: relative;
+		width: 250px;
+
+		&.errorLogo{
+			float: none;
+		}
+
+		@media screen and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5){
+			background-image: image-url($logo-retina);
+		}
+		
+		@media screen and (max-width: 767px){
+			clear: both;
+			margin: 0.5em auto 0;
+		}
+
+		@media screen and (min-width: 768px){
+			float: left;
+			margin-bottom: 0;
+		}
+	}
